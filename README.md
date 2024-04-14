@@ -17,8 +17,8 @@ const createInstructor = (firstName, lastName) => ({
     lastName
 });
 ```
-+ console.log(createInstructor("First Name Parameter", "Last Name Name Parameter"));
-    - returns `{firstName: 'First Name Parameter', lastName: 'Last Name Name Parameter'}`
++ createInstructor("First Name Parameter", "Last Name Parameter");
+    - returns `{firstName: 'First Name Parameter', lastName: 'Last Name Parameter'}`
 ---
 ### Computed Property Names
 ```javascript
@@ -39,7 +39,7 @@ const instructor = {
     [favoriteNumber] : "That is my favorite!"
 }
 ```
-+ console.log(instructor);
++ instructor;
     - returns `{42: 'That is my favorite!', firstName: 'Colt'}`
 ---
 ### Object Methods
@@ -67,11 +67,11 @@ const instructor = {
     }
 }
 ```
-+ console.log(instructor);
++ instructor;
     - returns `{firstName: 'Colt', sayHi: ƒ, sayBye: ƒ}`
-+ console.log(instructor.sayHi());
++ instructor.sayHi();
     - returns `Hi!`
-+ console.log(instructor.sayBye());
++ instructor.sayBye();
     - returns `Colt says bye!`
 ---
 ### createAnimal function
@@ -94,12 +94,11 @@ s.bleet() //"BAAAAaaaa"
 const createAnimal = (species, verb, noise) => ({
     species,
     [verb]() {
-        console.log(noise)
+        return noise
     }
 })
 ```
 + const d = createAnimal("dog", "bark", "Woooof!");d.bark();
-    - prints `Woooof!`
+    - returns `Woooof!`
 + const s = createAnimal("sheep", "bleet", "BAAAAaaaa");s.bleet();
-    - prints `BAAAAaaaa`
-
+    - returns `BAAAAaaaa`
