@@ -1,4 +1,5 @@
 # Object Enhancements Exercise
+***
 ### ES5
 ```javascript
 function createInstructor(firstName, lastName){
@@ -18,7 +19,7 @@ const createInstructor = (firstName, lastName) => ({
 ```
 + console.log(createInstructor("First Name Parameter", "Last Name Name Parameter"));
     - returns `{firstName: 'First Name Parameter', lastName: 'Last Name Name Parameter'}`
-
+---
 ### Computed Property Names
 ```javascript
 var favoriteNumber = 42;
@@ -40,7 +41,7 @@ const instructor = {
 ```
 + console.log(instructor);
     - returns `{42: 'That is my favorite!', firstName: 'Colt'}`
-
+---
 ### Object Methods
 ```javascript
 var instructor = {
@@ -72,7 +73,7 @@ const instructor = {
     - returns `Hi!`
 + console.log(instructor.sayBye());
     - returns `Colt says bye!`
-
+---
 ### createAnimal function
 Write a function which generates an animal object. The function should accepts 3 arguments:
 - species: the species of animal (‘cat’, ‘dog’)
