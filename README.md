@@ -99,7 +99,7 @@ const createAnimal = (species, verb, noise) => ({
 })
 ```
 + const d = createAnimal("dog", "bark", "Woooof!");d.bark();
-    -prints `Woooof!`
+    - prints `Woooof!`
 + const s = createAnimal("sheep", "bleet", "BAAAAaaaa");s.bleet();
-    -prints `BAAAAaaaa`
+    - prints `BAAAAaaaa`
 
